@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexar Water Polo Club</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">Nexar</div>
+        <div class="nav-links">
+          <a href="#program">Program</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact" class="btn">Contact</a>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <h1>Water Polo in Pasco County</h1>
+        <p>
+          Intro practices for kids. Friendly format, real sport basics, safe coaching.
+        </p>
+
+        <div class="hero-actions">
+          <button id="ctaBtn" class="btn btn-primary">Get Trial Practice</button>
+          <a class="btn btn-secondary" href="#program">Learn More</a>
+        </div>
+
+        <div class="badge-row">
+          <span class="badge">14U / 18U</span>
+          <span class="badge">Splashball</span>
+          <span class="badge">Tampa Bay Area</span>
+        </div>
+      </section>
+    </header>
+
+    <main class="container">
+      <section id="program" class="card">
+        <h2>Program</h2>
+        <ul>
+          <li>Water confidence + skills for deep water</li>
+          <li>Basic ball handling & passing</li>
+          <li>Game rules explained in a fun way</li>
+          <li>Teamwork & discipline</li>
+        </ul>
+      </section>
+
+      <section id="schedule" class="grid">
+        <div class="card">
+          <h2>Schedule</h2>
+          <p>Sample schedule (edit in PR as an exercise):</p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Group</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sunday</td>
+                <td>5:00 PM</td>
+                <td>Intro / Mixed</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>6:00 PM</td>
+                <td>14U</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>6:00 PM</td>
+                <td>18U</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card">
+          <h2>Quick Sign-up</h2>
+          <form id="signupForm" class="form">
+            <label>
+              Parent name
+              <input name="parent" placeholder="Your name" required />
+            </label>
+
+            <label>
+              Child age
+              <input name="age" type="number" min="5" max="18" placeholder="10" required />
+            </label>
+
+            <label>
+              Phone / Email
+              <input name="contact" placeholder="(xxx) xxx-xxxx or email" required />
+            </label>
+
+            <button class="btn btn-primary" type="submit">Submit</button>
+            <p class="small" id="formMsg" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section id="faq" class="card">
+        <h2>FAQ</h2>
+        <details>
+          <summary>Does my child need water polo experience?</summary>
+          <p>No — intro practices are designed for beginners.</p>
+        </details>
+        <details>
+          <summary>What should we bring?</summary>
+          <p>Swimsuit, towel, water bottle, and goggles (optional).</p>
+        </details>
+        <details>
+          <summary>Is it safe?</summary>
+          <p>We focus on safety, confidence in deep water, and clear rules on day one.</p>
+        </details>
+      </section>
+
+      <section id="contact" class="card">
+        <h2>Contact</h2>
+        <p>
+          Phone: <a href="tel:+18383330666">838-333-0666</a><br />
+          Email: <a href="mailto:swimnexar@gmail.com">swimnexar@gmail.com</a>
+        </p>
+
+        <div class="notice">
+          <strong>DevOps/GitHub practice idea:</strong>
+          Add a “Location” line here in a separate branch, then open a PR.
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Nexar Water Polo Club</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
